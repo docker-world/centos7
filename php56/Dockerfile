@@ -10,6 +10,10 @@ Composer"
 # install httpd
 RUN yum install httpd -y
 
+# autorun httpd
+RUN chkconfig httpd on
+
+# expose http/https ports
 EXPOSE 80
 EXPOSE 443
 
