@@ -8,11 +8,11 @@ LABEL description="Vim, Git"
 # update
 RUN yum update -y
 
-# vim
+# install vim
 RUN yum install vim -y
 
-# git
+# install git
 RUN yum install git -y
 
-# clean all
+# yum clean all
 RUN yum clean all
