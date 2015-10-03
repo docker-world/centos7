@@ -19,7 +19,7 @@ RUN yum install php56w php56w-opcache -y
 RUN yum install php56w-pdo -y
 RUN yum install php56w-mysqli -y
 RUN yum install php56w-xml -y
-sudo yum install php56w-intl -y
+RUN yum install php56w-intl -y
 
 # set php date timezone
 RUN perl -pi -e "s#;date.timezone =.*#date.timezone = Europe/London#g" /etc/php.ini
