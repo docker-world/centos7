@@ -7,7 +7,7 @@
 FROM centos:7
 MAINTAINER Eric Mugerwa <ericmdev@gmail.com>
 
-# yum update
+# update
 RUN yum update -y
 
 # vim
@@ -16,5 +16,5 @@ RUN yum install vim -y
 # git
 RUN yum install git -y
 
-# yum clean all
+# clean all
 RUN yum clean all
