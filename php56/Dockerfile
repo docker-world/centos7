@@ -10,6 +10,9 @@ Composer"
 # install httpd
 RUN yum install httpd -y
 
+EXPOSE 80
+EXPOSE 443
+
 # install php 5.6
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
@@ -26,6 +29,3 @@ RUN perl -pi -e "s#;date.timezone =.*#date.timezone = Europe/London#g" /etc/php.
 
 # yum clean all
 RUN yum clean all
-
-EXPOSE 80
-EXPOSE 443
