@@ -1,11 +1,11 @@
-############################################################
-# Dockerfile to build CentOS 7 container images
-# Based on CentOS 7
-# Install: Vim, Git
-############################################################
-
 FROM centos:7
+
 MAINTAINER Eric Mugerwa <ericmdev@gmail.com>
+
+LABEL version="1.0"
+LABEL description="Dockerfile to build CentOS 7 container images:\
+Vim\
+Git"
 
 # update
 RUN yum update -y
