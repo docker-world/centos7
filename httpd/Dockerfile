@@ -5,10 +5,9 @@ MAINTAINER Eric Mugerwa <ericmdev@gmail.com>
 LABEL version="1.0"
 LABEL description="Httpd"
 
-# update
 RUN yum install httpd -y
-
-# clean all
+RUN systemctl enable httpd
+RUN perl -pi -e "s/;EnableSendfile Off/EnableSendfile Off/g" /etc/httpd/conf/httpd.conf
 RUN yum clean all
 
 EXPOSE 80
