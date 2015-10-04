@@ -1,21 +1,9 @@
-FROM dockerworld/centos7:base
+FROM dockerworld/centos7:httpd
 
 MAINTAINER Eric Mugerwa <ericmdev@gmail.com>
 
 LABEL version="1.0"
-LABEL description="Httpd; \
-PHP: 5.6 (PDO, MySQLI, XML, Intl), \
-Composer"
-
-# install httpd
-RUN yum install httpd -y
-
-# autorun httpd
-RUN chkconfig httpd on
-
-# expose http/https ports
-EXPOSE 80
-EXPOSE 443
+LABEL description="PHP: 5.6 (PDO, MySQLI, XML, Intl)"
 
 # install php 5.6
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
