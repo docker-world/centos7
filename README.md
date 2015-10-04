@@ -2,14 +2,9 @@
 
 This is a CentOS 7 Apache MySQL PHP 5.6 docker image repository.
 
-All images include the following:
+Images include:
 
-	- Apache 2
-	- Git
-	- Vim
-
-Branches:
-
-	- php56
-	- php56-mysql
-	- php56-elasticsearch
+	- Base: Perl, Git, Vim
+	- Httpd
+	- PHP 5.6 with MySQLi, PDO, XML, Intl
+	- PHP 5.6 + MySQL
