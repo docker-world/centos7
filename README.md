@@ -1,6 +1,6 @@
 # CentOS 7 Docker Images
 
-This is a CentOS 7 Apache MySQL PHP 5.6 docker image repository.
+Build files for CentOS 7 / PHP Docker images.
 
 Images include:
 
